@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(113, 113, 215);
+}
+.c1{
+    background-color: lightblue;
+    
+
+}
+.nav{
+    position: fixed;
+    background-color: rgb(232, 153, 57);
+    width: 100%;
+
+}
+.c2{
+    width: 20%;
+    height: 300px;
+    margin: 40px 0;
+    display: inline-block;
+    background-color: brown;
+
+}
+.c3{
+    width: 80%;
+    height: 300px;
+    margin: 40px 0;
+    float:right;
+    text-align: center;
+    background-color: blueviolet;
+}
+footer{
+    background-color:aqua ;
+    text-align: center;
+
+}
+.shift{
+    padding: 40px;
+    
+}

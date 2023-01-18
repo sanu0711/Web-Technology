@@ -1,0 +1,21 @@
+t=int(input())
+for i in range(t):
+    n=int(input())
+    a=list(map(int,input().split()))
+    b=list(map(int,input().split()))
+    top=max(a)
+    nop=a.count(top)
+    if nop==1:
+        print(a.index(top) +1)
+    else:
+        c=a.index(top)
+        max_e=b[a.index(top)]
+        for k in range(nop-1):
+            if (b[c]<b[c+1]):
+                max_e=b[c+1]
+        print(b.index(max_e)+1)
+
+    
+        
+
+        
