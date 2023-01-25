@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Task 4</title>
+    </head>
+    <body>
+        <main>
+            <h1>This meassage is from main section</h1>
+            <p>paragraph written in main section</p>
+        </main>
+        <button onclick="mainsec()">click here</button>
+        <h1>This meassage is outside main section</h1>
+        <script type="text/javascript">
+            mainsec=function(){
+                var mm;
+                mm=document.querySelector('main');
+                mm.innerHTML="<h1>after button clicked </h1><p> contentent have been changed</p><h1>other content</h1>";
+                
+                mm.style.backgroundColor="lightpink";
+
+            }
+
+        </script>
+    </body>
+</html>

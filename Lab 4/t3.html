@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Task 3</title>
+    </head>
+    <style>
+        .bodyclass{
+            background-color: lightcoral;
+        }
+    </style>
+    <body>
+        <h1>set the color of the background directly with the class attribute</h1>
+        <button onclick="col();">Click here</button>
+        <script type="text/javascript">
+            col=function(){
+                document.body.style.background="lightblue";
+                alert("body has class = "+document.body.className);
+                document.body.className="bodyclass";
+                alert("body has class = "+document.body.className);
+                document.body.innerHTML="<h1>Background has been changed with class</h1>";
+            
+
+        }
+
+        </script>
+        
+    </body>
+</html>

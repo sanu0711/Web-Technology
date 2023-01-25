@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Task 5</title>
+    </head>
+    <body>
+        <main>
+            <h1>This content inside main section</h1>
+            <p>this is paragraph inside main section</p>
+        </main>
+        <h1 class="way1">first way to change color</h1>
+        <h1 class="way2">second way to change color</h1>
+        <h1 class="way3">third way to change color</h1>
+        <button onclick="colchange()">click here</button>
+        <script>
+            colchange=function(){
+                var col1;
+                col1=document.querySelector(".way1");
+                col1.style.backgroundColor="red";
+
+                var col2;
+                col2=document.querySelector(".way2");
+                col2.style.backgroundColor="rgb(255,255,0)";
+
+                var col3;
+                col3=document.querySelector(".way3");
+                col3.style.backgroundColor="#9900FF";
+
+
+
+            }
+        </script>
+
+        
+    </body>
+</html>
