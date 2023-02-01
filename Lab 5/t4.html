@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Task 4</title>
+    </head>
+    <body>
+        <table class="tbl">
+
+        </table>
+        <button onclick="fibo()">next row</button>
+        <script>
+            var a=0;
+            var b=1;
+            var c=0;
+            tb=document.querySelector(".tbl");
+            fibo=function(){
+                tr1=document.createElement("tr");
+                td1=document.createElement("td");
+                c=a+b
+                td1.innerText=c;
+                tr1.appendChild(td1);
+                tb.appendChild(tr1);
+                a=b;
+                b=c;
+                
+
+            }
+
+
+        </script>
+    </body>
+</html>

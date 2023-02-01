@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Task 2</title>
+    </head>
+    <!-- <style>
+        .count{
+            font-size: 15px;
+        }
+
+    </style> -->
+    <body>
+        
+        <p class="count">
+            This is count 0.
+        </p>
+        <button onclick="fontsizeinc()">update</button>
+        <script>
+            var i = 0;var j = 20;
+            fontsizeinc=function(){
+                i = i+1;
+                var t=document.querySelector(".count")
+                var temp = 'This is count '+i+'.';
+                t.innerHTML = temp;
+                t.style.fontSize = j+"px";
+                j = j+10;
+      }
+        </script>
+
+    </body>
+</html>

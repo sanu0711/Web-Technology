@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Task 5</title>
+    </head>
+    <body>
+        <label for="">Number 1 :</label>
+        <input type="text" id="num1"><br><br>
+        <label for="">Number 2 :</label>
+        <input type="text"  id="num2"><br>
+        <br>
+        <button onclick="Addition()">+</button>
+        <button onclick="Subtraction()">-</button>
+        <button onclick="Multiplication()">*</button>
+        <button onclick="Division()">/</button>
+        <br><br>
+        <h1 class="res">
+
+        </h1>
+        <script>
+            n1=document.querySelector("#num1");
+            n2=document.querySelector("#num2");
+            
+            rst=document.querySelector(".res");
+            Addition=function(){
+                n11=Number.parseInt(n1.value);
+                n22=Number.parseInt(n2.value);
+                var a=n11+n22;
+                rst.innerHTML="Addition = "+a;                 
+            
+            }
+            Subtraction=function(){
+                n11=Number.parseInt(n1.value);
+                n22=Number.parseInt(n2.value);
+                var s=n11-n22;
+                rst.innerHTML="Subtraction = "+s;
+
+            }
+            Multiplication=function(){
+                n11=Number.parseInt(n1.value);
+                n22=Number.parseInt(n2.value);
+                var m=n11*n22;
+                rst.innerHTML="Multiplication = "+m;
+
+            }
+            Division=function(){
+                n11=Number.parseInt(n1.value);
+                n22=Number.parseInt(n2.value);
+                var d=n11/n22;
+                rst.innerHTML="Division = "+d;
+
+            }          
+
+        </script>      
+    </body>
+</html>
+
+
+
+
