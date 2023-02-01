@@ -1,10 +1,44 @@
 <html>
-    <head>
-        <title>
-            Task 7
-        </title>
-    </head>
-    <body>
-        
-    </body>
+<head>
+	
+	<title>
+		Task 7
+	</title>
+
+</head>
+<body>
+	<div id="changable_at_2">
+		<label id="changable">Amount of Tip: </label>
+		<input type="text" name="inputs" id="Input"><br><br>
+		<button onclick="changeOption()">Next</button>
+	</div>
+	<br><br>
+	<div id="Tip"></div>
+	<script type="text/javascript">
+		var inputs = [];
+		var inp = document.querySelector("#Input");
+		var labels = ['Percentage you would like to Tip: ','Number of persons: '];
+		var i = 0;var j=0;
+		function changeOption(){
+			if(j<=2){
+				inputs[i] = Number.parseInt(inp.value);i = i+1;
+				var Label = document.querySelector("#changable");
+				Label.innerHTML = labels[j];j = j+1;
+				if(Label.innerHTML == labels[1]){
+					var btn = document.querySelector('button');
+					btn.innerHTML = "Pay";
+				}
+				if(j==3){
+					var Div = document.querySelector('#changable_at_2');
+					Div.innerHTML = 'Visit Again !';
+					var personal = (inputs[1]*inputs[0])/100;
+					var others = (inputs[0]-Number(personal))/(inputs[2]-1);
+					var Tip = document.querySelector("#Tip");
+					var netTip = 'Your Personal Tip : Rs '+personal+'<br>'+'Others Tip (each) : Rs '+others;
+					Tip.innerHTML = netTip;
+				}
+			}
+		}
+	</script>
+</body>
 </html>
