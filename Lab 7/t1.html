@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Task 1</title>
+</head>
+<body>
+	<h1>Prototype</h1>
+	<input type="text" id="datatakes">
+	<button id="btn">Submit</button>
+	<ul id="ullist"></ul>
+    <button onclick="reset()">reload</button>
+
+    
+
+	<script>
+         reset = function(){
+            localStorage.clear();
+            location.reload();
+        }
+		const inputItem = document.getElementById('datatakes');
+		const btnn = document.getElementById('btn');
+		const listItems = document.getElementById('ullist');
+
+		const savedItems = localStorage.getItem('prevdata');
+		if (savedItems) {
+			listItems.innerHTML = savedItems;
+		}
+		btnn.addEventListener('click', () => {
+			const newListItem = document.createElement('li');
+			newListItem.innerText = inputItem.value;
+			listItems.appendChild(newListItem);
+			inputItem.value = '';
+			localStorage.setItem('prevdata', listItems.innerHTML);
+		});
+	</script>
+</body>
+</html>
